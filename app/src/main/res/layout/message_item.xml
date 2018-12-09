@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20dp"
-        android:background="@color/colorPrimary">
+        android:background="@color/colorBlack2">
 
         <TextView
             android:id="@+id/message_text_view_quantity"
@@ -39,6 +39,15 @@
             android:text="Hi, How are you?"
             android:maxLines="1"
             android:ellipsize="end"
+            />
+
+        <com.allenliu.badgeview.BadgeView
+            android:id="@+id/badge"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/message_text_view_quantity"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorWhite"
             />
     </RelativeLayout>
 

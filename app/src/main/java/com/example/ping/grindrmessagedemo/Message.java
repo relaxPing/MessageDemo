@@ -13,11 +13,11 @@ public class Message {
 
     private String message;
 
-    private int created_at;
+    private long created_at;
 
-    private int updated_at;
+    private long updated_at;
 
-    public Message(String name, String message, int created_at, int updated_at) {
+    public Message(String name, String message, long created_at, long updated_at) {
         this.name = name;
         this.message = message;
         this.created_at = created_at;
@@ -36,7 +36,7 @@ public class Message {
         return name;
     }
 
-    public int getCreated_at() {
+    public long getCreated_at() {
         return created_at;
     }
 
@@ -44,7 +44,7 @@ public class Message {
         return message;
     }
 
-    public int getUpdated_at() {
+    public long getUpdated_at() {
         return updated_at;
     }
 }

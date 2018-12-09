@@ -41,9 +41,12 @@ public abstract class MessageDatabase extends RoomDatabase {
         }
         @Override
         protected Void doInBackground(Void... voids) {
-            messageDao.insert(new Message("Tim", "Hi, there!", 1544378400,1544378400));
-            messageDao.insert(new Message("Mike", "Hi, How are you?", 1544385600,1544385600));
-            messageDao.insert(new Message("Derek", "what's up?", 1544395020,1544395020));
+            long now = System.currentTimeMillis()/1000;
+            messageDao.insert(new Message("Tim", "Hi, there!", 1544196000,1544196000));
+            messageDao.insert(new Message("Kelly", "What you up to?", 1544196000,1544196000));
+            messageDao.insert(new Message("Scott", "Hi, Cutie!", 1544196000,1544196000));
+            messageDao.insert(new Message("Mike", "Hi, How are you?", 1544314800,1544314800));
+            messageDao.insert(new Message("Derek", "what's up?", now, now));
             return null;
         }
     }

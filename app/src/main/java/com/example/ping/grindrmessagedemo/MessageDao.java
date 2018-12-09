@@ -24,6 +24,6 @@ public interface MessageDao {
     @Query("DELETE FROM message")
     void deleteAllMessages();
 
-    @Query("SELECT * FROM message ORDER BY updated_at")
+    @Query("SELECT * FROM message ORDER BY updated_at desc")
     LiveData<List<Message>> getAllMessages();
 }
