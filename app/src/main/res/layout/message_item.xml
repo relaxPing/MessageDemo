@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/message_text_view_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_alignParentEnd="true"
+            />
+
+        <TextView
+            android:id="@+id/message_text_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mike"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_toStartOf="@+id/message_text_view_quantity"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/message_text_view_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_text_view_name"
+            android:text="Hi, How are you?"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
